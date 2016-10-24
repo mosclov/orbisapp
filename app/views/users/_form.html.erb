@@ -12,7 +12,7 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :first_name %><br>
+    <%= f.label :first_name, "Name" %><br>
     <%= f.text_field :first_name %>
   </div>
   <div class="field">
@@ -20,8 +20,8 @@
     <%= f.text_field :last_name %>
   </div>
   <div class="field">
-    <%= f.label :d_o_b %><br>
-    <%= f.date_select :d_o_b %>
+    <%= f.label :d_o_b, "Date of Birth" %><br>
+    <%= f.date_select :d_o_b, start_year: 1999, end_year: 1940 %>
   </div>
   <div class="actions">
     <%= f.submit %>
